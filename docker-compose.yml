@@ -17,10 +17,10 @@ services:
       - db
 
   db:
-    build:
-      context: ./db
+    image: mysql:8  # Use the official MySQL image
     ports:
       - "3306:3306"
     environment:
       MYSQL_ROOT_PASSWORD: root
       MYSQL_DATABASE: multi_tier_db
+
