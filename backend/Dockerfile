@@ -8,5 +8,5 @@ RUN mvn package -DskipTests
 
 FROM eclipse-temurin:17
 WORKDIR /app
-COPY --from=build /app/target/*.jar app.jar
-CMD ["java", "-jar", "app.jar"]
+COPY --from=build /app/target/*.war app.war
+CMD ["java", "-jar", "app.war"]
