@@ -1,0 +1,5 @@
+# Dockerfile
+FROM mysql:8
+ENV MYSQL_ROOT_PASSWORD=root
+ENV MYSQL_DATABASE=multi_tier_db
+EXPOSE 3306
